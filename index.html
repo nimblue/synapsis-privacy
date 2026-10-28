@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de Confidentialité | Synapsis Math AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: rgba(22, 29, 49, 0.75);
+      --card-border: rgba(99, 102, 241, 0.15);
+      --primary: #6366f1;
+      --primary-light: #818cf8;
+      --accent: #10b981;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --highlight: #f59e0b;
+      --glass: blur(16px);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.12) 0px, transparent 50%),
+        radial-gradient(at 50% 50%, rgba(245, 158, 11, 0.05) 0px, transparent 60%);
+      background-attachment: fixed;
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    body.lang-ar {
+      font-family: 'Tajawal', 'Plus Jakarta Sans', sans-serif;
+      direction: rtl;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: var(--glass);
+      -webkit-backdrop-filter: var(--glass);
+      background: rgba(9, 13, 22, 0.85);
+      border-bottom: 1px solid var(--card-border);
+      padding: 16px 24px;
+    }
+
+    .header-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .logo-badge {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #6366f1, #3b82f6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 20px;
+      color: #fff;
+      box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+    }
+
+    .logo-text h1 {
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .logo-text p {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .lang-switcher {
+      display: flex;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      padding: 3px;
+      gap: 2px;
+    }
+
+    .lang-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(99, 102, 241, 0.4);
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 40px auto 0;
+      padding: 0 20px;
+    }
+
+    .hero-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      backdrop-filter: var(--glass);
+      border-radius: 20px;
+      padding: 36px 32px;
+      margin-bottom: 32px;
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+    }
+
+    .badge-tag {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: rgba(99, 102, 241, 0.15);
+      color: var(--primary-light);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 14px;
+      border: 1px solid rgba(99, 102, 241, 0.3);
+    }
+
+    .badge-tag.algeria {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border-color: rgba(16, 185, 129, 0.3);
+      margin-left: 6px;
+      margin-right: 6px;
+    }
+
+    h2.title {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .meta-info {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      color: var(--text-muted);
+      font-size: 13px;
+      margin-top: 10px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .content-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      backdrop-filter: var(--glass);
+      border-radius: 18px;
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 20px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .section-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: rgba(99, 102, 241, 0.2);
+      color: var(--primary-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    p {
+      color: #cbd5e1;
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+
+    ul, ol {
+      margin-left: 24px;
+      margin-bottom: 16px;
+      color: #cbd5e1;
+    }
+
+    body.lang-ar ul, body.lang-ar ol {
+      margin-left: 0;
+      margin-right: 24px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    .highlight-box {
+      background: rgba(99, 102, 241, 0.08);
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 0 12px 12px 0;
+      margin: 18px 0;
+    }
+
+    body.lang-ar .highlight-box {
+      border-left: none;
+      border-right: 4px solid var(--primary);
+      border-radius: 12px 0 0 12px;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin: 18px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    body.lang-ar table {
+      text-align: right;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    th {
+      background: rgba(255, 255, 255, 0.05);
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    td {
+      color: #94a3b8;
+    }
+
+    .rights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      margin: 16px 0;
+    }
+
+    .right-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      padding: 16px;
+      border-radius: 12px;
+    }
+
+    .right-card h4 {
+      color: var(--primary-light);
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+
+    .right-card p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+
+    footer {
+      max-width: 960px;
+      margin: 40px auto 0;
+      padding: 0 20px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+
+    footer a {
+      color: var(--primary-light);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      color: #ffffff;
+      font-size: 14px;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+
+    .contact-badge:hover {
+      background: rgba(99, 102, 241, 0.2);
+    }
+  </style>
+</head>
+<body class="lang-fr">
+
+  <header>
+    <div class="header-inner">
+      <div class="logo-container">
+        <div class="logo-badge">∑</div>
+        <div class="logo-text">
+          <h1>Synapsis Math AI</h1>
+          <p id="sub-header-title">Protection des données & Confidentialité</p>
+        </div>
+      </div>
+      <div class="lang-switcher">
+        <button class="lang-btn active" onclick="setLang('fr')">Français</button>
+        <button class="lang-btn" onclick="setLang('en')">English</button>
+        <button class="lang-btn" onclick="setLang('ar')">العربية</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Top Hero Card -->
+    <div class="hero-card">
+      <span class="badge-tag">Conformité Juridique</span>
+      <span class="badge-tag algeria">Loi 18-07 (Algérie) & RGPD</span>
+      <h2 class="title" id="main-title">Politique de Confidentialité</h2>
+      <p id="hero-desc">
+        La présente politique détaille la collecte, l'utilisation et la protection des données personnelles par l'application <strong>Synapsis Math AI</strong>, conformément à la <strong>Loi algérienne n° 18-07 du 10 juin 2018</strong> relative à la protection des personnes physiques dans le traitement des données à caractère personnel (mise à jour par la Loi n° 25-11), aux directives de l'<strong>ANPDP</strong> (Autorité Nationale de Protection des Données à caractère Personnel), ainsi qu'aux exigences de Google Play.
+      </p>
+      <div class="meta-info">
+        <span id="meta-date">📅 Dernière mise à jour : 28 Octobre 2026</span>
+        <span id="meta-operator">🏢 Responsable : Synapsis Math AI / Nimblue</span>
+        <span id="meta-scope">🌍 Portée : République Algérienne Démocratique et Populaire & International</span>
+      </div>
+    </div>
+
+    <!-- Content Blocks (Dynamic per language) -->
+    <div id="content-area"></div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Synapsis Math AI. Tous droits réservés.</p>
+    <p style="margin-top: 6px;">
+      <a href="terms.html" id="footer-terms-link">Conditions Générales d'Utilisation</a> • 
+      <a href="https://github.com/nimblue/synapsis-privacy" target="_blank">Dépôt GitHub</a>
+    </p>
+  </footer>
+
+  <script>
+    const translations = {
+      fr: {
+        subTitle: "Protection des données & Confidentialité",
+        badge1: "Conformité Juridique",
+        badge2: "Loi 18-07 (Algérie) & RGPD",
+        mainTitle: "Politique de Confidentialité",
+        heroDesc: "La présente politique détaille la collecte, l'utilisation et la protection des données personnelles par l'application <strong>Synapsis Math AI</strong>, conformément à la <strong>Loi algérienne n° 18-07 du 10 juin 2018</strong> relative à la protection des personnes physiques dans le traitement des données à caractère personnel (mise à jour par la Loi n° 25-11), aux directives de l'<strong>ANPDP</strong> (Autorité Nationale de Protection des Données à caractère Personnel), ainsi qu'aux exigences de Google Play.",
+        metaDate: "📅 Dernière mise à jour : 28 Octobre 2026",
+        metaOperator: "🏢 Responsable : Synapsis Math AI / Nimblue",
+        metaScope: "🌍 Portée : Algérie & International",
+        footerTerms: "Conditions Générales d'Utilisation",
+        sections: [
+          {
+            num: "1",
+            title: "Identité du Responsable du Traitement (Art. 12 Loi 18-07)",
+            content: `
+              <p>Le traitement des données à caractère personnel collectées via l'application mobile <strong>Synapsis Math AI</strong> est géré sous la responsabilité du développeur / éditeur :</p>
+              <ul>
+                <li><strong>Application :</strong> Synapsis Math AI</li>
+                <li><strong>Développeur / Responsable :</strong> Nimblue</li>
+                <li><strong>Contact direct / DPO :</strong> <a href="mailto:nimblue.dev@gmail.com" style="color: var(--primary-light);">nimblue.dev@gmail.com</a></li>
+                <li><strong>Cadre régulateur national :</strong> Autorité Nationale de Protection des Données à caractère Personnel (ANPDP - Algérie, <a href="https://anpdp.dz" target="_blank" style="color:var(--accent);">www.anpdp.dz</a>).</li>
+              </ul>
+            `
+          },
+          {
+            num: "2",
+            title: "Principe de Minimisation & Absence de Compte Utilisateur",
+            content: `
+              <p>Conformément au principe fondamental de minimisation des données (Article 4 de la Loi 18-07), Synapsis Math AI a été conçue selon une approche <strong>Privacy by Design</strong> :</p>
+              <div class="highlight-box">
+                <strong>Aucune inscription obligatoire :</strong> L'application n'exige ni création de compte, ni nom, ni adresse e-mail, ni numéro de téléphone pour résoudre des exercices ou parcourir le cursus mathématique.
+              </div>
+              <p>Votre progression (points XP, séries quotidiennes, niveaux débloqués, statistiques et thèmes) est stockée <strong>exclusivement en local</strong> sur la mémoire sécurisée de votre appareil (via GetStorage). Vous pouvez effacer ces données à tout instant en vidant le cache de l'application.</p>
+            `
+          },
+          {
+            num: "3",
+            title: "Données Traitées & Finalités du Traitement",
+            content: `
+              <div class="table-container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Catégorie de Donnée</th>
+                      <th>Finalité du Traitement</th>
+                      <th>Stockage / Durée</th>
+                      <th>Base Légale</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Photos d'exercices mathématiques</strong> (Caméra / Galerie)</td>
+                      <td>Reconnaissance OCR et analyse algorithmique pas-à-pas des étapes mathématiques.</td>
+                      <td><strong>Traitement transitoire</strong> uniquement. Aucune image n'est conservée ni archivée de façon permanente.</td>
+                      <td>Consentement explicite (Art. 7 Loi 18-07)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Progression pédagogique</strong> (XP, scores, séries)</td>
+                      <td>Suivi des acquis et ludification de l'apprentissage des mathématiques.</td>
+                      <td>Stockage local sur le téléphone jusqu'à la désinstallation.</td>
+                      <td>Exécution du service éducatif</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Identifiants publicitaires & techniques</strong> (Google AdMob)</td>
+                      <td>Diffusion d'annonces publicitaires (bannières et vidéos récompensées pour débloquer des analyses gratuites).</td>
+                      <td>Géré par Google AdMob selon les règles de consentement UMP.</td>
+                      <td>Consentement / Intérêt légitime</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Achats & Abonnements</strong> (Google Play Billing)</td>
+                      <td>Gestion de l'accès Premium illimité (mensuel / annuel).</td>
+                      <td>Géré exclusivement par Google Play. Synapsis ne traite ni ne stocke aucune coordonnée bancaire.</td>
+                      <td>Exécution contractuelle</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Données de diagnostic anonymes</strong> (Sentry)</td>
+                      <td>Détection des plantages et amélioration de la stabilité de l'application.</td>
+                      <td>Rapports anonymes (version OS, modèle d'appareil, pile d'erreurs).</td>
+                      <td>Intérêt légitime / Sécurité</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            `
+          },
+          {
+            num: "4",
+            title: "Autorisations de l'Appareil (Android)",
+            content: `
+              <p>L'application sollicite uniquement les permissions strictement nécessaires à son fonctionnement :</p>
+              <ul>
+                <li><strong>Appareil photo (CAMERA) :</strong> Utilisé en temps réel uniquement lorsque vous appuyez sur l'icône de capture pour scanner un exercice manuscrit ou imprimé.</li>
+                <li><strong>Stockage / Galerie (READ_MEDIA_IMAGES) :</strong> Permet de sélectionner une photo d'exercice existante de votre galerie.</li>
+                <li><strong>Accès réseau (INTERNET) :</strong> Requis pour interroger le modèle d'intelligence artificielle (Google Gemini), vérifier l'abonnement Google Play et charger les annonces publicitaires.</li>
+              </ul>
+            `
+          },
+          {
+            num: "5",
+            title: "Sous-traitants & Transferts Transfrontaliers (Art. 44 Loi 18-07)",
+            content: `
+              <p>Certains traitements nécessitent l'intervention de partenaires technologiques hébergeant des serveurs sécurisés en dehors d'Algérie. Ces prestataires appliquent des standards de sécurité et de chiffrement rigoureux :</p>
+              <ul>
+                <li><strong>Google Cloud / Gemini AI :</strong> Analyse transitoire des requêtes mathématiques multimodales avec chiffrement HTTPS/TLS en transit.</li>
+                <li><strong>Google AdMob & Google Play :</strong> Régie publicitaire et facturation intégrée.</li>
+                <li><strong>Sentry.io (Functional Software Inc.) :</strong> Surveillance des erreurs techniques et plantages système.</li>
+              </ul>
+            `
+          },
+          {
+            num: "6",
+            title: "Protection des Mineurs & Élèves",
+            content: `
+              <p>Synapsis Math AI est un outil pédagogique destiné aux étudiants (collège, lycée, université) :</p>
+              <div class="highlight-box">
+                Conformément à la législation algérienne sur la protection des mineurs et aux règles Google Play Families, l'utilisation de l'application par des mineurs doit se faire sous la supervision et avec le <strong>consentement préalable des parents ou représentants légaux</strong>.
+              </div>
+              <p>L'application ne cible pas les enfants avec du profilage publicitaire invasif et respecte le drapeau technique <em>Tag For Under Age of Consent</em> lorsque configuré.</p>
+            `
+          },
+          {
+            num: "7",
+            title: "Vos Droits sous la Loi 18-07 & Comment les Exercer",
+            content: `
+              <p>Conformément aux Articles 32 à 38 de la Loi algérienne n° 18-07, vous disposez des droits suivants sur vos données :</p>
+              <div class="rights-grid">
+                <div class="right-card">
+                  <h4>Droit d'accès & information</h4>
+                  <p>Savoir si des données vous concernant sont traitées et obtenir communication de celles-ci.</p>
+                </div>
+                <div class="right-card">
+                  <h4>Droit de rectification</h4>
+                  <p>Exiger la correction immédiate de toute donnée inexacte ou incomplète.</p>
+                </div>
+                <div class="right-card">
+                  <h4>Droit à l'effacement</h4>
+                  <p>Supprimer vos données en réinitialisant le cache de l'application ou sur simple demande écrite.</p>
+                </div>
+                <div class="right-card">
+                  <h4>Droit d'opposition</h4>
+                  <p>Vous opposer à tout moment au traitement de vos données pour motifs légitimes.</p>
+                </div>
+              </div>
+              <p>Pour exercer vos droits ou pour toute question relative à la confidentialité de vos données, vous pouvez contacter directement le responsable :</p>
+              <p><a href="mailto:nimblue.dev@gmail.com" class="contact-badge">✉ nimblue.dev@gmail.com</a></p>
+              <p style="margin-top:14px; font-size:13px; color:var(--text-muted);">Vous disposez également du droit d'introduire une réclamation auprès de l'<strong>Autorité Nationale de Protection des Données à caractère Personnel (ANPDP)</strong> en Algérie (<a href="https://anpdp.dz" target="_blank" style="color:var(--primary-light);">anpdp.dz</a>).</p>
+            `
+          }
+        ]
+      },
+
+      en: {
+        subTitle: "Data Protection & Privacy Policy",
+        badge1: "Legal Compliance",
+        badge2: "Algerian Law 18-07 & International Standards",
+        mainTitle: "Privacy Policy",
+        heroDesc: "This Privacy Policy explains how <strong>Synapsis Math AI</strong> collects, uses, and safeguards personal data in accordance with <strong>Algerian Law No. 18-07 of June 10, 2018</strong> regarding the protection of natural persons in the processing of personal data (amended by Law No. 25-11), <strong>ANPDP</strong> regulations, and Google Play Store policies.",
+        metaDate: "📅 Last Updated: October 28, 2026",
+        metaOperator: "🏢 Controller: Synapsis Math AI / Nimblue",
+        metaScope: "🌍 Scope: Algeria & Global Users",
+        footerTerms: "Terms of Service",
+        sections: [
+          {
+            num: "1",
+            title: "Identity of the Data Controller (Art. 12 Law 18-07)",
+            content: `
+              <p>Data processing activities related to the <strong>Synapsis Math AI</strong> mobile application are managed by the application publisher:</p>
+              <ul>
+                <li><strong>Application:</strong> Synapsis Math AI</li>
+                <li><strong>Developer / Controller:</strong> Nimblue</li>
+                <li><strong>Contact / DPO Email:</strong> <a href="mailto:nimblue.dev@gmail.com" style="color: var(--primary-light);">nimblue.dev@gmail.com</a></li>
+                <li><strong>Supervisory Authority:</strong> National Data Protection Authority of Algeria (ANPDP, <a href="https://anpdp.dz" target="_blank" style="color:var(--accent);">www.anpdp.dz</a>).</li>
+              </ul>
+            `
+          },
+          {
+            num: "2",
+            title: "Data Minimization & No Mandatory Account",
+            content: `
+              <p>In accordance with data minimization principles (Article 4 of Law 18-07), Synapsis Math AI is built on a <strong>Privacy-by-Design</strong> foundation:</p>
+              <div class="highlight-box">
+                <strong>No user registration required:</strong> You can solve math problems, practice quizzes, and navigate chapters without entering your name, email, password, or phone number.
+              </div>
+              <p>Your educational progress (XP points, daily streaks, unlocked levels, quiz answers, and preferences) is stored <strong>locally on your device</strong> using secure on-device storage. You can erase it at any time by clearing the application storage.</p>
+            `
+          },
+          {
+            num: "3",
+            title: "Data Categories & Purpose of Processing",
+            content: `
+              <div class="table-container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Data Category</th>
+                      <th>Purpose</th>
+                      <th>Storage / Retention</th>
+                      <th>Legal Basis</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Math Problem Images</strong> (Camera / Gallery)</td>
+                      <td>OCR text extraction and algorithmic step-by-step math analysis.</td>
+                      <td><strong>Transient processing only</strong>. Images are never archived or saved on permanent external servers.</td>
+                      <td>User Consent (Art. 7 Law 18-07)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Learning Progress</strong> (XP, streak, achievements)</td>
+                      <td>Tracking mastery, achievements, and curriculum navigation.</td>
+                      <td>Stored locally on your smartphone until app uninstallation.</td>
+                      <td>Educational service fulfillment</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Ad Identifiers & Tech Info</strong> (Google AdMob)</td>
+                      <td>Serving banner and rewarded interstitial ads to support free analyses.</td>
+                      <td>Handled by Google AdMob according to user consent choices.</td>
+                      <td>Consent / Legitimate Interest</td>
+                    </tr>
+                    <tr>
+                      <td><strong>In-App Purchases</strong> (Google Play Billing)</td>
+                      <td>Managing monthly/annual Premium subscriptions.</td>
+                      <td>Processed entirely by Google Play. Synapsis never stores your credit card details.</td>
+                      <td>Contractual necessity</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Anonymous Diagnostics</strong> (Sentry)</td>
+                      <td>Crash detection and software stability improvements.</td>
+                      <td>Anonymous technical crash traces and device model info.</td>
+                      <td>Legitimate Interest / Security</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            `
+          },
+          {
+            num: "4",
+            title: "Device Permissions (Android)",
+            content: `
+              <p>The application only requests permissions essential for core features:</p>
+              <ul>
+                <li><strong>Camera (CAMERA):</strong> Activated strictly when you take a photo of a math equation.</li>
+                <li><strong>Photo Library (READ_MEDIA_IMAGES):</strong> Used only when you select an existing math exercise from your photo gallery.</li>
+                <li><strong>Network (INTERNET):</strong> Required to communicate with the Google Gemini AI inference service, handle Google Play billing, and load ads.</li>
+              </ul>
+            `
+          },
+          {
+            num: "5",
+            title: "Third-Party Processors & Cross-Border Transfers",
+            content: `
+              <p>To deliver advanced math reasoning, the app relies on cloud services whose secure infrastructure may be located outside Algeria (Articles 44+ of Law 18-07). All transfers employ modern encryption protocols (TLS/HTTPS):</p>
+              <ul>
+                <li><strong>Google LLC (Gemini AI API):</strong> Transient multimodal mathematical reasoning.</li>
+                <li><strong>Google LLC (AdMob & Play Billing):</strong> Advertising delivery and subscription management.</li>
+                <li><strong>Sentry (Functional Software Inc.):</strong> Real-time error diagnostic telemetry.</li>
+              </ul>
+            `
+          },
+          {
+            num: "6",
+            title: "Children & Students Protection",
+            content: `
+              <p>Synapsis Math AI is designed as a learning companion for students:</p>
+              <div class="highlight-box">
+                Under Algerian Law 18-07 and Google Play Family guidelines, students who are minors must use the application with the <strong>knowledge and consent of their parents or legal guardians</strong>.
+              </div>
+              <p>We do not collect identifiable personal profiles from minors, nor do we run personalized advertising targeted to underage users.</p>
+            `
+          },
+          {
+            num: "7",
+            title: "Your Rights & Contact Information",
+            content: `
+              <p>Under Articles 32–38 of Algerian Law No. 18-07, you hold the following rights regarding your personal data:</p>
+              <div class="rights-grid">
+                <div class="right-card">
+                  <h4>Right to Information & Access</h4>
+                  <p>Inquire whether your personal data is processed and request details.</p>
+                </div>
+                <div class="right-card">
+                  <h4>Right to Rectification</h4>
+                  <p>Request correction of inaccurate or incomplete information.</p>
+                </div>
+                <div class="right-card">
+                  <h4>Right to Erasure</h4>
+                  <p>Delete all your stored progress by clearing app storage or contacting us.</p>
+                </div>
+                <div class="right-card">
+                  <h4>Right to Object</h4>
+                  <p>Object at any time to the processing of your data on legitimate grounds.</p>
+                </div>
+              </div>
+              <p>To exercise your rights, contact our Data Protection representative:</p>
+              <p><a href="mailto:nimblue.dev@gmail.com" class="contact-badge">✉ nimblue.dev@gmail.com</a></p>
+              <p style="margin-top:14px; font-size:13px; color:var(--text-muted);">You may also submit inquiries or complaints to Algeria's <strong>National Personal Data Protection Authority (ANPDP)</strong> at <a href="https://anpdp.dz" target="_blank" style="color:var(--primary-light);">anpdp.dz</a>.</p>
+            `
+          }
+        ]
+      },
+
+      ar: {
+        subTitle: "حماية البيانات الشخصية وسياسة الخصوصية",
+        badge1: "الامتثال القانوني",
+        badge2: "القانون الجزائري 18-07 والمعايير الدولية",
+        mainTitle: "سياسة الخصوصية",
+        heroDesc: "توضح سياسة الخصوصية هذه كيفية جمع البيانات واستخدامها وحمايتها في تطبيق <strong>Synapsis Math AI</strong>، وفقاً لأحكام <strong>القانون الجزائري رقم 18-07 المؤرخ في 10 جوان 2018</strong> المتعلق بحماية الأشخاص الطبيعيين في مجال معالجة المعطيات ذات الطابع الشخصي (المعدل والمتمم بالقانون رقم 25-11)، وتعليمات <strong>السلطة الوطنية لحماية المعطيات ذات الطابع الشخصي (ANPDP)</strong>، ومتطلبات متجر Google Play.",
+        metaDate: "📅 آخر تحديث: 28 أكتوبر 2026",
+        metaOperator: "🏢 المسؤول عن المعالجة: Synapsis Math AI / Nimblue",
+        metaScope: "🌍 النطاق: الجمهورية الجزائرية الديمقراطية الشعبية والمستخدمون دولياً",
+        footerTerms: "شروط الخدمة والاستخدام",
+        sections: [
+          {
+            num: "1",
+            title: "هوية المسؤول عن المعالجة (المادة 12 من القانون 18-07)",
+            content: `
+              <p>تتم معالجة البيانات المتعلقة بتطبيق <strong>Synapsis Math AI</strong> تحت إشراف ومسؤولية المطوّر:</p>
+              <ul>
+                <li><strong>التطبيق:</strong> Synapsis Math AI</li>
+                <li><strong>المسؤول / المطوّر:</strong> Nimblue</li>
+                <li><strong>البريد الإلكتروني للتواصل:</strong> <a href="mailto:nimblue.dev@gmail.com" style="color: var(--primary-light);">nimblue.dev@gmail.com</a></li>
+                <li><strong>الهيئة الوطنية الرقابية:</strong> السلطة الوطنية لحماية المعطيات ذات الطابع الشخصي (ANPDP - الجزائر، <a href="https://anpdp.dz" target="_blank" style="color:var(--accent);">www.anpdp.dz</a>).</li>
+              </ul>
+            `
+          },
+          {
+            num: "2",
+            title: "مبدأ تقليص البيانات وعدم إلزامية إنشاء حساب",
+            content: `
+              <p>التزاماً بمبدأ الحد الأدنى للبيانات (المادة 4 من القانون 18-07)، صُمم التطبيق ليحترم خصوصيتك بشكل كامل:</p>
+              <div class="highlight-box">
+                <strong>لا يتطلب التطبيق أي تسجيل:</strong> لا نطلب اسمك أو بريدك الإلكتروني أو كلمة مرور أو رقم هاتفك لاستخدام ميزات حل المسائل والدروس الرياضية.
+              </div>
+              <p>يتم تخزين تقدمك التعليمي (نقاط الخبرة XP، أيام التدريب المتتالية، المراحل المفتوحة، وتفضيلات المظهر) <strong>محلياً فقط على هاتفك</strong>، ويمكنك مسحها بالكامل في أي وقت من خلال مسح بيانات التطبيق من إعدادات جهازك.</p>
+            `
+          },
+          {
+            num: "3",
+            title: "البيانات المعالجة وأغراض الاستخدام",
+            content: `
+              <div class="table-container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>فئة البيانات</th>
+                      <th>الغرض من المعالجة</th>
+                      <th>مدة ومكان التخزين</th>
+                      <th>السند القانوني</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>صور المسائل الرياضية</strong> (الكاميرا / المعرض)</td>
+                      <td>التعرف الضوئي على النصوص (OCR) وتحليل خطوات الحل الرياضي بدقة عبر الذكاء الاصطناعي.</td>
+                      <td><strong>معالجة مؤقتة وفورية فقط</strong>؛ لا يتم حفظ الصور أو أرشفتها على خوادم دائمة.</td>
+                      <td>موافقة المستخدم الصريحة (المادة 7 من القانون 18-07)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>بيانات التقدم التعليمي</strong> (النقاط، الاختبارات)</td>
+                      <td>متابعة مستوى التحصيل العلمي وفتح المستويات والدروس المتقدمة.</td>
+                      <td>مخزنة محلياً في ذاكرة جهازك فقط حتى يتم حذف التطبيق.</td>
+                      <td>تنفيذ الخدمة التعليمية</td>
+                    </tr>
+                    <tr>
+                      <td><strong>المعرفات الإعلانية والتقنية</strong> (Google AdMob)</td>
+                      <td>عرض الإعلانات (الإعلانات المكافئة وبانرات الإعلانات لدعم التحليلات المجانية).</td>
+                      <td>تتم إدارتها بواسطة Google وفق خيارات الموافقة الخاصة بك.</td>
+                      <td>الموافقة / المصلحة المشروعة</td>
+                    </tr>
+                    <tr>
+                      <td><strong>الاشتراكات والمدفوعات</strong> (Google Play Billing)</td>
+                      <td>تفعيل الباقة المميزة غير المحدودة (شهرية / سنوية).</td>
+                      <td>تتم المعالجة بالكامل وبأمان عبر Google Play دون معرفة أو تخزين أي بيانات بنكية لدينا.</td>
+                      <td>تنفيذ العقد</td>
+                    </tr>
+                    <tr>
+                      <td><strong>بيانات التشخيص والأعطال</strong> (Sentry)</td>
+                      <td>رصد أخطاء النظام وتحسين أداء واستقرار التطبيق برمجياً.</td>
+                      <td>تقارير فنية مجهولة المصدر (نوع نظام التشغيل، طراز الجهاز، وتفاصيل الخطأ البرمجي).</td>
+                      <td>المصلحة المشروعة / أمان النظام</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            `
+          },
+          {
+            num: "4",
+            title: "أذونات الجهاز (نظام أندرويد)",
+            content: `
+              <p>يطلب التطبيق فقط الأذونات الضرورية جداً لعمل وظائفه الأساسية:</p>
+              <ul>
+                <li><strong>الكاميرا (CAMERA):</strong> تُستخدم فورياً عند ضغط زر التصوير لالتقاط معادلة أو مسألة رياضية لحلها.</li>
+                <li><strong>الصور والوسائط (READ_MEDIA_IMAGES):</strong> للسماح باختيار صورة مسألة من معرض الصور الخاص بك.</li>
+                <li><strong>الاتصال بالإنترنت (INTERNET):</strong> ضروري للتواصل مع نموذج الذكاء الاصطناعي (Google Gemini)، والتحقق من الاشتراكات وعرض الإعلانات.</li>
+              </ul>
+            `
+          },
+          {
+            num: "5",
+            title: "المعالجون الخارجيون ونقل البيانات عبر الحدود (المادة 44 من القانون 18-07)",
+            content: `
+              <p>لتقديم خدمة الذكاء الاصطناعي المتقدمة، يتعامل التطبيق مع خوادم آمنة لشركاء تقنيين دوليين معتمدة على تشفير عالي الكفاءة (TLS/HTTPS):</p>
+              <ul>
+                <li><strong>Google Cloud و Gemini AI:</strong> المعالجة الذكية اللحظية لمعادلات الرياضيات.</li>
+                <li><strong>Google AdMob و Google Play:</strong> إدارة الإعلانات وخدمات الشراء الرقمي.</li>
+                <li><strong>Sentry:</strong> مراقبة استقرار التطبيق والأخطاء البرمجية.</li>
+              </ul>
+            `
+          },
+          {
+            num: "6",
+            title: "حماية القُصّر والطلاب",
+            content: `
+              <p>تطبيق Synapsis Math AI أداة تعليمية للطلاب والتلاميذ بمختلف المراحل الدراسية:</p>
+              <div class="highlight-box">
+                وفقاً للتشريع الجزائري لحماية القُصّر وسياسات متجر Google Play، يتعين على القُصّر استخدام التطبيق تحت إشراف و<strong>موافقة مسبقة من أوليائهم أو ممثليهم القانونيين</strong>.
+              </div>
+              <p>نحن لا نجمع أي بيانات تعريفية للأطفال ولا نقوم باستهداف القُصّر بإعلانات موجهة مخصصة.</p>
+            `
+          },
+          {
+            num: "7",
+            title: "حقوقك القانونية وكيفية ممارستها",
+            content: `
+              <p>بموجب المواد من 32 إلى 38 من القانون الجزائري رقم 18-07، يحق لك التمتع بالحقوق التالية:</p>
+              <div class="rights-grid">
+                <div class="right-card">
+                  <h4>حق الوصول والإعلام</h4>
+                  <p>معرفة طبيعة المعالجة والحصول على معلومات واضحة بشأن بياناتك.</p>
+                </div>
+                <div class="right-card">
+                  <h4>حق التصحيح والتحيين</h4>
+                  <p>المطالبة بتصحيح أو تعديل أي بيانات غير صحيحة.</p>
+                </div>
+                <div class="right-card">
+                  <h4>حق الحذف والمسح</h4>
+                  <p>مسح بياناتك التراكمية في أي لحظة عبر مسح ذاكرة التطبيق أو التواصل معنا.</p>
+                </div>
+                <div class="right-card">
+                  <h4>حق الاعتراض</h4>
+                  <p>الاعتراض لأسباب مشروعة على أي معالجة لمعطياتك الشخصية.</p>
+                </div>
+              </div>
+              <p>لممارسة حقوقك أو تقديم أي استفسار يتعلق بالخصوصية، يمكنك التواصل مباشرة معنا:</p>
+              <p><a href="mailto:nimblue.dev@gmail.com" class="contact-badge">✉ nimblue.dev@gmail.com</a></p>
+              <p style="margin-top:14px; font-size:13px; color:var(--text-muted);">كما يحق لك تقديم شكوى أمام <strong>السلطة الوطنية لحماية المعطيات ذات الطابع الشخصي (ANPDP)</strong> بالجزائر عبر موقعها الرسمي <a href="https://anpdp.dz" target="_blank" style="color:var(--primary-light);">anpdp.dz</a>.</p>
+            `
+          }
+        ]
+      }
+    };
+
+    function setLang(lang) {
+      document.body.className = 'lang-' + lang;
+      const data = translations[lang];
+
+      document.getElementById('sub-header-title').innerText = data.subTitle;
+      document.getElementById('main-title').innerText = data.mainTitle;
+      document.getElementById('hero-desc').innerHTML = data.heroDesc;
+      document.getElementById('meta-date').innerText = data.metaDate;
+      document.getElementById('meta-operator').innerText = data.metaOperator;
+      document.getElementById('meta-scope').innerText = data.metaScope;
+      document.getElementById('footer-terms-link').innerText = data.footerTerms;
+
+      const buttons = document.querySelectorAll('.lang-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      const activeBtn = Array.from(buttons).find(b => b.getAttribute('onclick').includes(lang));
+      if (activeBtn) activeBtn.classList.add('active');
+
+      const contentArea = document.getElementById('content-area');
+      contentArea.innerHTML = data.sections.map(sec => `
+        <div class="content-card">
+          <div class="section-title">
+            <div class="section-num">${sec.num}</div>
+            <div>${sec.title}</div>
+          </div>
+          ${sec.content}
+        </div>
+      `).join('');
+    }
+
+    // Default to French (widely used in Algeria for tech/privacy), with smooth switch to AR/EN
+    setLang('fr');
+  </script>
+</body>
+</html>
